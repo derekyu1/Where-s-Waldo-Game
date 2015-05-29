@@ -1,0 +1,529 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Strobe_Lights
+{
+    public partial class Form1 : Form
+    {
+
+        int timeLeft;
+        int timeLeftReal;
+        private bool buttonwasclicked;
+        private bool turntoblack;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        Random randonGen = new Random();
+        private Color CreateRandomColor()
+        {
+
+            Color randomColor = Color.FromArgb(randonGen.Next(255), randonGen.Next(255), randonGen.Next(255));
+
+            return randomColor;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void startbutton_Click(object sender, EventArgs e)
+        {
+            timeLeft = 1;
+            timeLeftReal = 5;
+            buttonwasclicked = false;
+            label1.Text = "5 seconds";
+            timer2.Start();
+            startbutton.Enabled = false;
+            turntoblack = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            if (timeLeft == 1 && turntoblack == false)
+            {
+
+                Color color = CreateRandomColor();
+                button1.BackColor = color;
+
+                Color color2 = CreateRandomColor();
+                button2.BackColor = color2;
+
+                Color color3 = CreateRandomColor();
+                button3.BackColor = color3;
+
+                Color color4 = CreateRandomColor();
+                button4.BackColor = color4;
+
+                Color color5 = CreateRandomColor();
+                button5.BackColor = color5;
+                Color color6 = CreateRandomColor();
+                button6.BackColor = color6;
+                Color color7 = CreateRandomColor();
+                button7.BackColor = color7;
+                Color color8 = CreateRandomColor();
+                button8.BackColor = color8;
+                Color color9 = CreateRandomColor();
+                button9.BackColor = color9;
+                Color color10 = CreateRandomColor();
+                button10.BackColor = color10;
+                Color color11 = CreateRandomColor();
+                button11.BackColor = color11;
+                Color color12 = CreateRandomColor();
+                button12.BackColor = color12;
+                Color color13 = CreateRandomColor();
+                button13.BackColor = color13;
+                Color color14 = CreateRandomColor();
+                button14.BackColor = color14;
+                Color color15 = CreateRandomColor();
+                button15.BackColor = color15;
+                Color color16 = CreateRandomColor();
+                button16.BackColor = color16;
+                Color color17 = CreateRandomColor();
+                button17.BackColor = color17;
+                Color color18 = CreateRandomColor();
+                button18.BackColor = color18;
+                Color color19 = CreateRandomColor();
+                button19.BackColor = color19;
+                Color color20 = CreateRandomColor();
+                button20.BackColor = color20;
+                Color color21 = CreateRandomColor();
+                button21.BackColor = color21;
+                Color color22 = CreateRandomColor();
+                button22.BackColor = color22;
+                Color color23 = CreateRandomColor();
+                button23.BackColor = color23;
+                Color color24 = CreateRandomColor();
+                button24.BackColor = color24;
+                Color color25 = CreateRandomColor();
+                button25.BackColor = color25;
+                Color color26 = CreateRandomColor();
+                button26.BackColor = color26;
+                Color color27 = CreateRandomColor();
+                button27.BackColor = color27;
+                Color color28 = CreateRandomColor();
+                button28.BackColor = color28;
+                Color color29 = CreateRandomColor();
+                button29.BackColor = color29;
+                Color color30 = CreateRandomColor();
+                button30.BackColor = color30;
+                Color color31 = CreateRandomColor();
+                button31.BackColor = color31;
+                Color color32 = CreateRandomColor();
+                button32.BackColor = color32;
+                Color color33 = CreateRandomColor();
+                button33.BackColor = color33;
+                Color color34 = CreateRandomColor();
+                button34.BackColor = color34;
+                Color color35 = CreateRandomColor();
+                button35.BackColor = color35;
+                Color color36 = CreateRandomColor();
+                button36.BackColor = color36;
+                Color color37 = CreateRandomColor();
+                button37.BackColor = color37;
+                Color color38 = CreateRandomColor();
+                button38.BackColor = color38;
+                Color color39 = CreateRandomColor();
+                button39.BackColor = color39;
+                Color color40 = CreateRandomColor();
+                button40.BackColor = color40;
+                Color color41 = CreateRandomColor();
+                button41.BackColor = color41;
+                Color color42 = CreateRandomColor();
+                button42.BackColor = color42;
+                Color color43 = CreateRandomColor();
+                button43.BackColor = color43;
+                Color color44 = CreateRandomColor();
+                button44.BackColor = color44;
+                Color color45 = CreateRandomColor();
+                button45.BackColor = color45;
+                Color color46 = CreateRandomColor();
+                button46.BackColor = color46;
+                Color color47 = CreateRandomColor();
+                button47.BackColor = color47;
+                Color color48 = CreateRandomColor();
+                button48.BackColor = color48;
+                Color color49 = CreateRandomColor();
+                button49.BackColor = color49;
+                Color color50 = CreateRandomColor();
+                button50.BackColor = color50;
+                Color color51 = CreateRandomColor();
+                button51.BackColor = color51;
+                Color color52 = CreateRandomColor();
+                button52.BackColor = color52;
+                Color color53 = CreateRandomColor();
+                button53.BackColor = color53;
+                Color color54 = CreateRandomColor();
+                button54.BackColor = color54;
+                Color color55 = CreateRandomColor();
+                button55.BackColor = color55;
+                Color color56 = CreateRandomColor();
+                button56.BackColor = color56;
+                Color color57 = CreateRandomColor();
+                button57.BackColor = color57;
+                Color color58 = CreateRandomColor();
+                button58.BackColor = color58;
+                Color color59 = CreateRandomColor();
+                button59.BackColor = color59;
+                Color color60 = CreateRandomColor();
+                button60.BackColor = color60;
+                Color color61 = CreateRandomColor();
+                button61.BackColor = color61;
+                Color color62 = CreateRandomColor();
+                button62.BackColor = color62;
+                Color color63 = CreateRandomColor();
+                button63.BackColor = color63;
+                Color color64 = CreateRandomColor();
+                button64.BackColor = color64;
+                Color color65 = CreateRandomColor();
+                button65.BackColor = color65;
+                Color color66 = CreateRandomColor();
+                button66.BackColor = color66;
+                Color color67 = CreateRandomColor();
+                button67.BackColor = color67;
+                Color color68 = CreateRandomColor();
+                button68.BackColor = color68;
+                Color color69 = CreateRandomColor();
+                button69.BackColor = color69;
+                Color color70 = CreateRandomColor();
+                button70.BackColor = color70;
+                Color color71 = CreateRandomColor();
+                button71.BackColor = color71;
+                Color color72 = CreateRandomColor();
+                button72.BackColor = color72;
+                Color color73 = CreateRandomColor();
+                button73.BackColor = color73;
+                Color color74 = CreateRandomColor();
+                button74.BackColor = color74;
+                Color color75 = CreateRandomColor();
+                button75.BackColor = color75;
+                Color color76 = CreateRandomColor();
+                button76.BackColor = color76;
+                Color color77 = CreateRandomColor();
+                button77.BackColor = color77;
+                Color color78 = CreateRandomColor();
+                button78.BackColor = color78;
+                Color color79 = CreateRandomColor();
+                button79.BackColor = color79;
+                Color color80 = CreateRandomColor();
+                button80.BackColor = color80;
+                Color color81 = CreateRandomColor();
+                button81.BackColor = color81;
+                Color color82 = CreateRandomColor();
+                button82.BackColor = color82;
+                Color color83 = CreateRandomColor();
+                button83.BackColor = color83;
+                Color color84 = CreateRandomColor();
+                button84.BackColor = color84;
+                Color color85 = CreateRandomColor();
+                button85.BackColor = color85;
+                Color color86 = CreateRandomColor();
+                button86.BackColor = color86;
+                Color color87 = CreateRandomColor();
+                button87.BackColor = color87;
+
+                Color color88 = CreateRandomColor();
+                button88.BackColor = color88;
+                Color color89 = CreateRandomColor();
+                button89.BackColor = color89;
+                Color color90 = CreateRandomColor();
+                button90.BackColor = color90;
+                Color color91 = CreateRandomColor();
+                button91.BackColor = color91;
+                Color color92 = CreateRandomColor();
+                button92.BackColor = color92;
+                Color color93 = CreateRandomColor();
+                button93.BackColor = color93;
+                Color color94 = CreateRandomColor();
+                button94.BackColor = color94;
+                Color color95 = CreateRandomColor();
+                button95.BackColor = color95;
+                Color color96 = CreateRandomColor();
+                button96.BackColor = color96;
+                Color color97 = CreateRandomColor();
+                button97.BackColor = color97;
+                Color color98 = CreateRandomColor();
+                button98.BackColor = color98;
+                Color color99 = CreateRandomColor();
+                button99.BackColor = color99;
+                Color color100 = CreateRandomColor();
+                button100.BackColor = color100;
+            }
+
+            else 
+            {
+                Color color = CreateRandomColor();
+                button1.BackColor = Color.Black;
+
+                Color color2 = CreateRandomColor();
+                button2.BackColor = Color.Black;
+
+                Color color3 = CreateRandomColor();
+                button3.BackColor = Color.Black;
+
+                Color color4 = CreateRandomColor();
+                button4.BackColor = Color.Black;
+
+                Color color5 = CreateRandomColor();
+                button5.BackColor = Color.Black;
+                Color color6 = CreateRandomColor();
+                button6.BackColor = Color.Black;
+                Color color7 = CreateRandomColor();
+                button7.BackColor = Color.Black;
+                Color color8 = CreateRandomColor();
+                button8.BackColor = Color.Black;
+                Color color9 = CreateRandomColor();
+                button9.BackColor = Color.Black;
+                Color color10 = CreateRandomColor();
+                button10.BackColor = Color.Black;
+                Color color11 = CreateRandomColor();
+                button11.BackColor = Color.Black;
+                Color color12 = CreateRandomColor();
+                button12.BackColor = Color.Black;
+                Color color13 = CreateRandomColor();
+                button13.BackColor = Color.Black;
+                Color color14 = CreateRandomColor();
+                button14.BackColor = Color.Black;
+                Color color15 = CreateRandomColor();
+                button15.BackColor = Color.Black;
+                Color color16 = CreateRandomColor();
+                button16.BackColor = Color.Black;
+                Color color17 = CreateRandomColor();
+                button17.BackColor = Color.Black;
+                Color color18 = CreateRandomColor();
+                button18.BackColor = Color.Black;
+                Color color19 = CreateRandomColor();
+                button19.BackColor = Color.Black;
+                Color color20 = CreateRandomColor();
+                button20.BackColor = Color.Black;
+                Color color21 = CreateRandomColor();
+                button21.BackColor = Color.Black;
+                Color color22 = CreateRandomColor();
+                button22.BackColor = Color.Black;
+                Color color23 = CreateRandomColor();
+                button23.BackColor = Color.Black;
+                Color color24 = CreateRandomColor();
+                button24.BackColor = Color.Black;
+                Color color25 = CreateRandomColor();
+                button25.BackColor = Color.Black;
+                Color color26 = CreateRandomColor();
+                button26.BackColor = Color.Black;
+                Color color27 = CreateRandomColor();
+                button27.BackColor = Color.Black;
+                Color color28 = CreateRandomColor();
+                button28.BackColor = Color.Black;
+                Color color29 = CreateRandomColor();
+                button29.BackColor = Color.Black;
+                Color color30 = CreateRandomColor();
+                button30.BackColor = Color.Black;
+                Color color31 = CreateRandomColor();
+                button31.BackColor = Color.Black;
+                Color color32 = CreateRandomColor();
+                button32.BackColor = Color.Black;
+                Color color33 = CreateRandomColor();
+                button33.BackColor = Color.Black;
+                Color color34 = CreateRandomColor();
+                button34.BackColor = Color.Black;
+                Color color35 = CreateRandomColor();
+                button35.BackColor = Color.Black;
+                Color color36 = CreateRandomColor();
+                button36.BackColor = Color.Black;
+                Color color37 = CreateRandomColor();
+                button37.BackColor = Color.Black;
+                Color color38 = CreateRandomColor();
+                button38.BackColor = Color.Black;
+                Color color39 = CreateRandomColor();
+                button39.BackColor = Color.Black;
+                Color color40 = CreateRandomColor();
+                button40.BackColor = Color.Black;
+                Color color41 = CreateRandomColor();
+                button41.BackColor = Color.Black;
+                Color color42 = CreateRandomColor();
+                button42.BackColor = Color.Black;
+                Color color43 = CreateRandomColor();
+                button43.BackColor = Color.Black;
+                Color color44 = CreateRandomColor();
+                button44.BackColor = Color.Black;
+                Color color45 = CreateRandomColor();
+                button45.BackColor = Color.Black;
+                Color color46 = CreateRandomColor();
+                button46.BackColor = Color.Black;
+                Color color47 = CreateRandomColor();
+                button47.BackColor = Color.Black;
+                Color color48 = CreateRandomColor();
+                button48.BackColor = Color.Black;
+                Color color49 = CreateRandomColor();
+                button49.BackColor = Color.Black;
+                Color color50 = CreateRandomColor();
+                button50.BackColor = Color.Black;
+                Color color51 = CreateRandomColor();
+                button51.BackColor = Color.Black;
+                Color color52 = CreateRandomColor();
+                button52.BackColor = Color.Black;
+                Color color53 = CreateRandomColor();
+                button53.BackColor = Color.Black;
+                Color color54 = CreateRandomColor();
+                button54.BackColor = Color.Black;
+                Color color55 = CreateRandomColor();
+                button55.BackColor = Color.Black;
+                Color color56 = CreateRandomColor();
+                button56.BackColor = Color.Black;
+                Color color57 = CreateRandomColor();
+                button57.BackColor = Color.Black;
+                Color color58 = CreateRandomColor();
+                button58.BackColor = Color.Black;
+                Color color59 = CreateRandomColor();
+                button59.BackColor = Color.Black;
+                Color color60 = CreateRandomColor();
+                button60.BackColor = Color.Black;
+                Color color61 = CreateRandomColor();
+                button61.BackColor = Color.Black;
+                Color color62 = CreateRandomColor();
+                button62.BackColor = Color.Black;
+                Color color63 = CreateRandomColor();
+                button63.BackColor = Color.Black;
+                Color color64 = CreateRandomColor();
+                button64.BackColor = Color.Black;
+                Color color65 = CreateRandomColor();
+                button65.BackColor = Color.Black;
+                Color color66 = CreateRandomColor();
+                button66.BackColor = Color.Black;
+                Color color67 = CreateRandomColor();
+                button67.BackColor = Color.Black;
+                Color color68 = CreateRandomColor();
+                button68.BackColor = Color.Black;
+                Color color69 = CreateRandomColor();
+                button69.BackColor = Color.Black;
+                Color color70 = CreateRandomColor();
+                button70.BackColor = Color.Black;
+                Color color71 = CreateRandomColor();
+                button71.BackColor = Color.Black;
+                Color color72 = CreateRandomColor();
+                button72.BackColor = Color.Black;
+                Color color73 = CreateRandomColor();
+                button73.BackColor = Color.Black;
+                Color color74 = CreateRandomColor();
+                button74.BackColor = Color.Black;
+                Color color75 = CreateRandomColor();
+                button75.BackColor = Color.Black;
+                Color color76 = CreateRandomColor();
+                button76.BackColor = Color.Black;
+                Color color77 = CreateRandomColor();
+                button77.BackColor = Color.Black;
+                Color color78 = CreateRandomColor();
+                button78.BackColor = Color.Black;
+                Color color79 = CreateRandomColor();
+                button79.BackColor = Color.Black;
+                Color color80 = CreateRandomColor();
+                button80.BackColor = Color.Black;
+                Color color81 = CreateRandomColor();
+                button81.BackColor = Color.Black;
+                Color color82 = CreateRandomColor();
+                button82.BackColor = Color.Black;
+                Color color83 = CreateRandomColor();
+                button83.BackColor = Color.Black;
+                Color color84 = CreateRandomColor();
+                button84.BackColor = Color.Black;
+                Color color85 = CreateRandomColor();
+                button85.BackColor = Color.Black;
+                Color color86 = CreateRandomColor();
+                button86.BackColor = Color.Black;
+                Color color87 = CreateRandomColor();
+                button87.BackColor = Color.Black;
+
+                Color color88 = CreateRandomColor();
+                button88.BackColor = Color.Black;
+                Color color89 = CreateRandomColor();
+                button89.BackColor = Color.Black;
+                Color color90 = CreateRandomColor();
+                button90.BackColor = Color.Black;
+                Color color91 = CreateRandomColor();
+                button91.BackColor = Color.Black;
+                Color color92 = CreateRandomColor();
+                button92.BackColor = Color.Black;
+                Color color93 = CreateRandomColor();
+                button93.BackColor = Color.Black;
+                Color color94 = CreateRandomColor();
+                button94.BackColor = Color.Black;
+                Color color95 = CreateRandomColor();
+                button95.BackColor = Color.Black;
+                Color color96 = CreateRandomColor();
+                button96.BackColor = Color.Black;
+                Color color97 = CreateRandomColor();
+                button97.BackColor = Color.Black;
+                Color color98 = CreateRandomColor();
+                button98.BackColor = Color.Black;
+                Color color99 = CreateRandomColor();
+                button99.BackColor = Color.Black;
+                Color color100 = CreateRandomColor();
+                button100.BackColor = Color.Black;
+            }
+        }
+
+        private void stopbutton_Click(object sender, EventArgs e)
+        {
+            timeLeft = 0;
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            if (timeLeft == 1)
+            {
+                button35.BackgroundImage = Image.FromFile(@"C:\Users\derek.yu\Documents\waldo.jpg");
+                buttonwasclicked = true;
+                turntoblack = true;
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (buttonwasclicked)
+            {
+                timer2.Stop();
+                MessageBox.Show("You found Waldo! Congratulations. You are a Winner!");
+                startbutton.Enabled = true;
+            }
+
+            else if (timeLeftReal > 0)
+            {
+                timeLeftReal--;
+                label1.Text = timeLeftReal + " " + "seconds";
+            }
+
+            else
+            {
+                timer2.Stop();
+                turntoblack = true;
+                button35.BackgroundImage = Image.FromFile(@"C:\Users\derek.yu\Documents\waldo.jpg");
+                label1.Text = "Time's Up!";
+                MessageBox.Show("You didn't find Waldo. He found you", "You suck!");
+                startbutton.Enabled = true;
+              
+                
+            }
+        }
+
+
+    }
+}
